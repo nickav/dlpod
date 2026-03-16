@@ -2,7 +2,7 @@ const https = require('https');
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const { parseString } = require('xml2js');
+const { parseString } = require('./third_party/xml2js_0.6.2.min.js');
 
 function parseArgs(argv) {
   const args = { url: null, dir: './downloads', parallel: 3, force: false, naming: 'original' };
